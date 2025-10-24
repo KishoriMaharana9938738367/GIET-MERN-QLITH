@@ -1,0 +1,74 @@
+@import url(design.css);
+p {
+  background-color: blueviolet;
+}
+
+#box {
+  width: ;
+  height: ;
+  background-color: blue;
+}
+
+.paragraph {
+  background-color: brown;
+}
+
+h3 {
+  background-color: cyan;
+}
+
+b,
+strong,
+p {
+  background-color: darkcyan;
+}
+
+* {
+  color: rgb(32, 24, 24);
+}
+
+.parent p {
+  background-color: aquamarine;
+}
+
+.parent > p {
+  background-color: red;
+}
+
+.parent + p {
+  background-color: fuchsia;
+}
+
+.parent ~ p {
+  background-color: forestgreen;
+}
+
+.learn-pesudo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.learn-pesudo:hover {
+  background-color: blue;
+}
+
+.learn-pesudo:active {
+  background-color: lawngreen;
+}
+
+input:focus {
+  background-color: aquamarine;
+}
+
+ul li:first-child {
+  background-color: tomato;
+}
+
+ul li:last-child {
+  background-color: orange;
+}
+
+ul li:nth-child(3) {
+  background-color: yellow;
+}
