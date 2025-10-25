@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <style>
+      body {
+        background-color: #000;
+        font-family: Arial, sans-serif;
+      }
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        margin: 40px auto;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="date"],
+      input[type="email"],
+      input[type="password"],
+      select {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      button[type="submit"],
+      button[type="reset"] {
+        width: 100px;
+        height: 30px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover,
+      button[type="reset"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Application Form</h2>
+      <form>
+        <label>First Name: <input type="text" /></label>
+        <label>Last Name: <input type="text" /></label>
+        <label>Date of birth: <input type="date" /></label>
+        <label>Age: <input type="number" /></label>
+        <label
+          >Gender:
+          <select>
+            <option value="Male">Male</option>
+            <!-- assuming other options could be added -->
+          </select>
+        </label>
+        <label>Email Address: <input type="email" /></label>
+        <label>Positions Available:</label>
+        <input
+          type="radio"
+          id="junior"
+          name="position"
+          value="Junior Developer"
+        />
+        <label for="junior">Junior Developer</label>
+        <input
+          type="radio"
+          id="mid-level"
+          name="position"
+          value="Mid-level Developer"
+        />
+        <label for="mid-level">Mid-level Developer</label>
+        <input
+          type="radio"
+          id="senior"
+          name="position"
+          value="Senior Developer"
+        />
+        <label for="senior">Senior Developer</label>
+        <label>Programming Languages:</label>
+        <input type="checkbox" id="java" name="lang" value="Java" />
+        <label for="java">Java</label>
+        <input type="checkbox" id="javascript" name="lang" value="JavaScript" />
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="python" name="lang" value="Python" />
+        <label for="python">Python</label>
+        <label>Password: <input type="password" /></label>
+        <label>Confirm Password: <input type="password" /></label>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <p style="text-align: right">19th Oct - CSS</p>
+    </div>
+  </body>
+</html>
