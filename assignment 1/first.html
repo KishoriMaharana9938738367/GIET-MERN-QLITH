@@ -1,43 +1,84 @@
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>MONDAY</th>
-      <th>TUESDAY</th>
-      <th>WEDNESDAY</th>
-      <th>THURSDAY</th>
-      <th>FRIDAY</th>
-      <th>SATURDAY</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>8:30-9:30</td>
-      <td>-</td>
-      <td>SUB1</td>
-      <td>SUB1</td>
-      <td>SUB1</td>
-      <td>SUB1</td>
-      <td>SUB1</td>
-    </tr>
-    <tr>
-      <td>9:30-10:30</td>
-      <td>SUB1</td>
-      <td>SUB2</td>
-      <td>SUB2</td>
-      <td>SUB2</td>
-      <td>SUB2</td>
-      <td rowspan="2">SEMINAR</td>
-    </tr>
-    <tr>
-      <td>10:30-11:30</td>
-      <td>SUB2</td>
-      <td>SUB3</td>
-      <td>SWA</td>
-      <td>SUB3</td>
-      <td>SUB3</td>
-      <td></td>
-    </tr>
-    <!-- Add more rows for other time slots -->
-  </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <h1>Application Form</h1>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" />
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" /><br /><br />
+
+      <label for="dob">Date of birth:</label>
+      <input type="text" id="dob" name="dob" placeholder="mm/dd/YYYY" />
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" /><br /><br />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="Male">Male</option>
+        <!-- Assuming default is Male as per image -->
+      </select>
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter email address"
+      /><br /><br />
+
+      <label>Positions Available:</label>
+      <input
+        type="radio"
+        id="junior"
+        name="position"
+        value="Junior Developer"
+      />
+      <label for="junior">Junior Developer</label>
+      <input
+        type="radio"
+        id="midLevel"
+        name="position"
+        value="Mid-level Developer"
+        checked
+      />
+      <label for="midLevel">Mid-level Developer</label>
+      <input
+        type="radio"
+        id="senior"
+        name="position"
+        value="Senior Developer"
+      />
+      <label for="senior">Senior Developer</label><br /><br />
+
+      <label>Programming Languages:</label>
+      <input type="checkbox" id="java" name="languages[]" value="Java" />
+      <label for="java">Java</label>
+      <input
+        type="checkbox"
+        id="javascript"
+        name="languages[]"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label>
+      <input type="checkbox" id="python" name="languages[]" value="Python" />
+      <label for="python">Python</label><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <label for="confirmPassword">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
