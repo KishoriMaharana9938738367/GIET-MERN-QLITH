@@ -1,0 +1,45 @@
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.frame {
+  background-color: #111;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.mat {
+  background-color: white;
+  padding: 15px;
+}
+
+.photo {
+  display: block;
+  width: 300px;
+  height: 350px;
+  border: 1px solid #ccc;
+}
+
+.label {
+  position: absolute;
+  color: #f4f4f4;
+  font-size: 3rem;
+  text-align: left;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  background-color: rgb(199, 193, 193);
+}
+
+.label span {
+  font-size: 0.6em;
+  color: #ccc;
+}

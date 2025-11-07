@@ -1,0 +1,36 @@
+.certificate {
+  background-color: white;
+  border: 20px solid #ffa500; /* orange */
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 50px auto;
+  height: 200px;
+}
+
+.box1 {
+  background-color: black;
+  padding: 10px;
+}
+
+h1 {
+  color: #ff69b4; /* pinkish color for "Simplilearn" */
+  font-size: 40px;
+  margin: 0;
+}
+.box1 {
+  gap: var(10px);
+}
+
+.box2 {
+  margin-top: 20px;
+  background-color: black;
+  padding: 20px;
+}
+
+h3 {
+  color: #ff69b4; /* pinkish color for text */
+  font-size: 20px;
+  margin: 0;
+  gap: 20px;
+}
